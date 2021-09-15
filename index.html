@@ -4,12 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <script>
-        game();
-    </script>
+    <div id="header">
+        <h1>Rock Paper Scissors</h1>
+    </div>
+    <div class="spacer"></div>
+    <div id="img-container">
+        <img id="rock" class="grow large" src="./images/rock.png" alt="Rock">
+        <img id="paper" class="grow large" src="./images/paper.png" alt="Paper">
+        <img id="scissors" class="grow large" src="./images/scissors.png" alt="Scissors">
+    </div>
+    <div class="spacer"></div>
+    <div id="versus">
+        <div id="playerSelection">
+            <img id="rockPlayer" class="hide" src="images/rocksmall.png" alt="Player Chooses Rock">
+            <img id="paperPlayer" class="hide" src="images/papersmall.png" alt="Player Chooses Paper"> 
+            <img id="scissorsPlayer" class="hide" src="images/scissorssmall.png" alt="Player Chooses Scissors">          
+        </div>
+        <div id="vs">
+            <h3 id="vsHeader" class="hide">vs.</h3>
+        </div>
+        <div id="computerSelection">
+            <img id="rockComputer" class="hide" src="images/rocksmall.png" alt="Computer Chooses Rock">
+            <img id="paperComputer" class="hide" src="images/papersmall.png" alt="Computer Chooses Paper"> 
+            <img id="scissorsComputer" class="hide" src="images/scissorssmall.png" alt="Computer Chooses Scissors"> 
+        </div>
+    </div>
+    <div id="result">
+        <h3 id="resultHeader" class="hide"></h3>
+    </div>
+    <table id="scoreboard">
+        <tr>
+            <td>Player:</td>
+            <td id="playerScore">0</td>
+        </tr>
+        <tr>
+            <td>Computer:</td>
+            <td id="computerScore">0</td>
+        </tr>
+        <tr>
+            <td>Ties:</td>
+            <td id="ties">0</td>
+        </tr>
+    </table>
 </body>
 </html>

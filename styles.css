@@ -1,0 +1,100 @@
+body {
+    background-color: #ffbea7;
+    font-family: 'Cabon', sans-serif;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    padding-top: 50px;
+    color: white;
+    font-size: 3em;
+    border: 2px white solid;
+    background: #fa5a20;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: -1px 1px 2px 0.5px #fa5a20;
+}
+
+#img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+img .large {
+    padding: 100px 70px 70px 70px;
+}
+
+.grow {
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    
+}
+
+table {
+    border-spacing: 30px 10px;
+}
+
+td {
+    border: 2px white solid;
+    background: #fa5a20;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 1.3em;
+    box-shadow: -1px 1px 2px 0.5px #fa5a20;
+}
+
+#scoreboard {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+#result {
+    display: flex;
+    justify-content: center;
+}
+
+#versus {
+    display: flex;
+    justify-content: center;
+}
+
+#vsHeader {
+    padding-top: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: white;
+}
+
+#resultHeader {
+    border: 2px white solid;
+    background: #fa5a20;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 1.3em;
+    box-shadow: -1px 1px 2px 0.5px #fa5a20;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+}
+
+.hide {
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important;
+ }
+
+ .spacer {
+     padding: 20px;
+ }
+
